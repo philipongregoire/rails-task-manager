@@ -1,0 +1,6 @@
+<h2><%= @task.content %></h2>
+<p><%= @task.description %></p>
+
+<%= link_to "Delete", task_path(@task),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
